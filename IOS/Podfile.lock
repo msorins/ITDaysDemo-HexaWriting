@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.7.3)
+  - ObservableArray-RxSwift (0.2.0):
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxGesture (2.0.1):
+    - RxCocoa (~> 4.3.1)
+    - RxSwift (~> 4.3.1)
+  - RxSwift (4.3.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - ObservableArray-RxSwift
+  - RxCocoa
+  - RxGesture
+  - RxSwift (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ObservableArray-RxSwift
+    - RxCocoa
+    - RxGesture
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  ObservableArray-RxSwift: 905a088f51b1653f7eb55e6887f8a13916618f50
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxGesture: 26ede4ed13ffc6336d29dbd9a8dff229bdb72de7
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+
+PODFILE CHECKSUM: e4467e7b1127d96e60695f3f64c85635866f8c9c
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Xand0</title>
+    <script type="text/javascript" src="mind-framework.js"></script>
+    <script type="text/javascript">
+        mind.init({callback: function(robot){
+                skillID="RobotMiniProj";
+                robot.connectSkill({
+                    skillID: skillID,
+                    callback: robot.onRecvSkillData(function(skillID, data) {
+                        document.getElementById('img').setAttribute( 'src', 'data:image/png;base64,'+data);
+                    })
+                });
+
+                document.getElementById("ReExec").onclick = function() {
+                    robot.sendData({
+                        skillID: skillID,
+                        data: "ReExec"
+                    })
+                };
+
+                document.getElementById("DrawHeadLeftRight").onclick = function() {
+                    robot.sendData({
+                        skillID: skillID,
+                        data: "DrawHeadLeftRight"
+                    })
+                };
+
+                document.getElementById("DrawLeft").onclick = function() {
+                    robot.sendData({
+                        skillID: skillID,
+                        data: "DrawLeft"
+                    })
+                };
+
+                document.getElementById("DrawRight").onclick = function() {
+                    robot.sendData({
+                        skillID: skillID,
+                        data: "DrawRight"
+                    })
+                };
+
+                document.getElementById("DrawUp").onclick = function() {
+                    robot.sendData({
+                        skillID: skillID,
+                        data: "DrawUp"
+                    })
+                };
+
+                document.getElementById("DrawDown").onclick = function() {
+                    robot.sendData({
+                        skillID: skillID,
+                        data: "DrawDown"
+                    })
+                };
+
+                document.getElementById("MoveFront").onclick = function() {
+                    robot.sendData({
+                        skillID: skillID,
+                        data: "MoveFront"
+                    })
+                };
+
+                document.getElementById("PitchFront").onclick = function() {
+                    robot.sendData({
+                        skillID: skillID,
+                        data: "PitchFront"
+                    })
+                };
+
+                document.getElementById("PitchBack").onclick = function() {
+                    robot.sendData({
+                        skillID: skillID,
+                        data: "PitchBack"
+                    })
+                };
+
+                document.getElementById("PointToBoard").onclick = function() {
+                    robot.sendData({
+                        skillID: skillID,
+                        data: "PointToBoard"
+                    })
+                };
+
+            }});
+    </script>
+</head>
+<body>
+
+<button id="ReExec">ReExec</button>
+<button id="ProcessImage">ProcessImage</button>
+<br>
+<button id="DrawLeft"> Left </button>
+<button id="DrawRight"> Right </button>
+<button id="DrawUp"> Up </button>
+<button id="DrawDown"> Down </button>
+<br>
+<button id="MoveFront"> MoveFront </button>
+<button id="PitchFront"> PitchFront </button>
+<button id="PitchBack"> PitchBack </button>
+<button id="DrawHeadLeftRight"> DrawHeadLeftRight </button>
+<br>
+<button id="PointToBoard"> PointToBoard </button>
+
+
+<br>
+<img id="img" alt="img" src="a" />
+
+</body>
+</html>
