@@ -6,7 +6,7 @@
 ## Screens
 ![Demo Image ](https://github.com/msorins/ITDaysDemo-HexaWriting/blob/master/1.png?raw=true "Demo Image")
 
-![Demo Image ](https://github.com/msorins/ITDaysDemo-HexaWriting/blob/master/2.png?raw=true "Demo Image")
+![Demo Image ](https://github.com/msorins/ITDaysDemo-HexaWriting/blob/master/2.PNG?raw=true "Demo Image")
 
 # Idea
 *Connected devices*, *IOT* are the main concepts behind this demo.
@@ -20,8 +20,8 @@ I have used ARCore for image and object detection.
 
 
 These manually drawn patterns are used for image detection:
-* ![Demo Image ](https://github.com/msorins/ITDaysDemo-HexaWriting/blob/master/3.png?raw=true "Demo Image")
-* ![Demo Image ](https://github.com/msorins/ITDaysDemo-HexaWriting/blob/master/4.jpg?raw=true "Demo Image")
+* ![Demo Image ](https://github.com/msorins/ITDaysDemo-HexaWriting/blob/master/3.jpg?raw=true "Demo Image")
+* ![Demo Image ](https://github.com/msorins/ITDaysDemo-HexaWriting/blob/master/4.png?raw=true "Demo Image")
 
 # ROBOT
 In order to control it, an API server is running on the robot, listening to a certain trigger (that comes from the tablet) to start writing a sentence. As an addition, there are also written a bunch of endpoints for manually controlling the robot (from a web interface)
